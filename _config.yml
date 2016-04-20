@@ -23,7 +23,6 @@ exclude: ['node_modules', 'scss', 'DAM']
 
 google_analytics: true
 google_analytics_id: UA-XXXXXXXX-2
-jquery_version: 1.11.2
 
 sitemap:
   file: "/sitemap.xml"

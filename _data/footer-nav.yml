@@ -1,0 +1,19 @@
+- name: "Home"
+  url: "/"
+  icon: 'home'
+
+- name: "About Us"
+  url: "/about-us/#about"
+  icon: 'user'
+
+- name: "Shopping Centers"
+  url: "/shopping-center/#shopping"
+  icon: 'user'
+
+- name: "Retailers & Brands"
+  url: "/retailers-brands/#retailers"
+  icon: 'user'
+
+- name: "Blog"
+  url: "/blog/#blog"
+  icon: 'user'
