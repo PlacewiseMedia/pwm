@@ -1,0 +1,142 @@
+// Vertical List Items
+@mixin vertical-list($arg: null, $padding: $base-spacing) {
+  > li {
+    @include inline-block;
+    @include padding($padding 0);
+    width: 100%;
+  }
+
+  @if $arg == lined {
+    & > li {
+      border-bottom: 1px solid lighten($color-dark-grey, 30%);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+@mixin horizontal-list($arg: null, $display: inline) {
+  li {
+    display: $display;
+
+    @if $arg == piped {
+      @include padding;
+
+      &:after {
+        @include padding(0 ($base-spacing / 2));
+        content: '|';
+        color: currentColor;
+      }
+
+      &:last-child:after {
+        @include padding;
+        content: '';
+      }
+    }
+
+    @if $arg == doublecolon {
+      @include padding;
+
+      &:after {
+        @include padding(0 ($base-spacing / 2));
+        content: '::';
+      }
+
+      &:last-child:after {
+        @include padding;
+        content: '';
+      }
+    }
+
+    @if $arg == bulleted {
+      @include padding;
+
+      &:after {
+        @include padding(0 ($base-spacing / 2));
+        content: '•';
+      }
+
+      &:last-child:after {
+        @include padding;
+        content: '';
+      }
+    }
+
+    @if $arg == slashed {
+      @include padding;
+
+      &:after {
+        @include padding(0 ($base-spacing / 2));
+        content: '/';
+      }
+
+      &:last-child:after {
+        @include padding;
+        content: '';
+      }
+    }
+
+    @if $arg == spaced {
+      margin-left: $base-spacing/2;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    @if $arg == clear {
+      margin-left: 0;
+
+      &:after {
+        @include padding;
+        content: '';
+      }
+    }
+  }
+}
+
+@mixin bulleted {
+  ~ ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    list-style: outside disc;
+    margin-left: 1.25em;
+    border-bottom: 0;
+  }
+}
+
+@mixin bulleted-square {
+  ~ ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    list-style: outside square;
+    margin-left: 1.25em;
+    border-bottom: 0;
+  }
+}
+
+// Reset a list and remove default styles
+@mixin reset-list {
+  @include margin;
+  @include padding;
+  list-style: none;
+
+  li {
+    @include margin;
+    @include padding;
+    border: 0;
+    list-style: none;
+
+    &:after {
+      @include margin;
+      @include padding;
+      content: '';
+    }
+  }
+}

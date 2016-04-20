@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+// Ordered List
+ol {
+  @include margin(0 0 0 ($base-spacing * 1.5));
+  @include padding;
+
+  li {
+    list-style: decimal;
+    list-style-position: outside;
+  }
+
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  list-style: none outside none;
+
+  ul {
+    @include margin;
+  }
+}
+
+.bulleted {
+  @include bulleted;
+}
+
+// Horizontal List Items
+.horizontal {
+  li {
+    display: inline;
+  }
+
+  &.slashes li {
+    @include padding;
+
+    &:after {
+      content: '/';
+      @include padding(0 ($base-spacing / 2));
+    }
+
+    &:last-child:after {
+      content: '';
+    }
+  }
+
+  &.pipes li {
+    @include padding;
+
+    &:after {
+      content: '|';
+      @include padding(0 .25em 0 .5em);
+    }
+
+    &:last-child:after {
+      content: '';
+    }
+  }
+}
+
+// Vertical List Items
+.vertical {
+  li {
+    display: block !important;
+  }
+
+  > li {
+    @include padding(($base-spacing / 2) 0);
+  }
+
+  &.lined > li {
+    overflow: auto;
+    border-bottom: 1px dotted $color-grey;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+// Striped List Items
+.striped {
+  li:nth-child(odd) {
+    background-color: rgba($color-light-grey, .5);
+  }
+}

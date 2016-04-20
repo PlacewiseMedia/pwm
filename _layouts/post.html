@@ -3,24 +3,22 @@ layout: default
 comments: true
 ---
 
-<article>
+<article role="article">
 
-  <h1>{{ page.title }}</h1>
-  {% if post.sub-title != null %}
-  <h3>{{ page.sub-title }}</h3>
-  {% endif %}
-  <strong>
-    <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
-  </strong>
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% if post.sub-title != null %}
+    <h3>{{ page.sub-title }}</h3>
+    {% endif %}
+    <br>
+    <strong>
+      <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+    </strong>
+  </header>
 
-  <div class="row">
-    <div class="post">
-      {{ content }}
-    </div>
-    <div class="two-fifths"></div>
+  <div class="post">
+    {{ content }}
   </div>
-
-  <strong>FIN</strong>
 
 <!--   {% if page.comments %}
   <hr>

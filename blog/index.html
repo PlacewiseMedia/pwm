@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ENGAGE SHOPPERS ONLINE. DRIVE SALES ON PREMISE.
+title: Engage shoppers online. Drive sales on premises.
 description:
 class: blog
 parent: blog
@@ -10,7 +10,17 @@ parent: blog
 
 <section>
 
+  <h2>Articles</h2>
 
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <br>
+      <time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+    </li>
+    {% endfor %}
+  </ul>
 
 </section>
 <!-- /.blog -->

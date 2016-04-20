@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+audio {
+  display: inline-block;
+  max-width: 100%;
+
+  &:not([controls]) {
+    display: none;
+  }
+}

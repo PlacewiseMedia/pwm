@@ -1,0 +1,33 @@
+// Vertical Align
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// Horizontal Align
+@mixin center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// placeholder from Horizontal Align
+%center {
+  @include center;
+}
+
+// Center an element vertically and horizontally
+@mixin centerer($position: absolute) {
+  position: $position;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin horizontal-center($position: relative) {
+  position: $position;
+  left: 50%;
+  transform: translate(-50%);
+}

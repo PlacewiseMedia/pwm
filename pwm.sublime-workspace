@@ -33,9 +33,6 @@
 			]
 		]
 	},
-	"buffers":
-	[
-	],
 	"build_system": "",
 	"build_system_choices":
 	[
@@ -119,12 +116,15 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Users/Q/Sites/placewise/pwm"
-	],
 	"file_history":
 	[
+		"/Users/Q/Sites/placewise/pwm/_posts/2016-04-20-marketers-are-you-master-of-your-domain.md",
+		"/Users/Q/Sites/placewise/pwm/blog/index.html",
+		"/Users/Q/Sites/placewise/pwm/robots.txt",
+		"/Users/Q/Sites/placewise/pwm/_layouts/default.html",
+		"/Users/Q/Sites/placewise/pwm/_includes/schema_org.html",
+		"/Users/Q/Sites/placewise/pwm/_includes/nav.html",
+		"/Users/Q/Sites/placewise/pwm/.htaccess",
 		"/Users/Q/Sites/placewise/CoreWebSites/universal/torreys/design/src/js/validate.js",
 		"/Users/Q/Sites/placewise/CoreWebSites/Opus/mall-hillcountry/js/production.min.js",
 		"/Users/Q/Sites/placewise/CoreWebSites/Steadfast/mall-Everett/css/vars/_body-vars.scss",
@@ -245,18 +245,11 @@
 		"/Users/Q/Sites/placewise/CoreWebSites/CBL/mall-gulfcoasttowncenter/css/vars/_setting-vars.scss",
 		"/Users/Q/Sites/placewise/CoreWebSites/ColonieMgmt/mall-broadway/css/vars/_setting-vars.scss",
 		"/Users/Q/Sites/placewise/CoreWebSites/ColonieMgmt/mall-colonie/css/vars/_setting-vars.scss",
-		"/Users/Q/Sites/placewise/CoreWebSites/ColonieMgmt/mall-yorktown/css/vars/_setting-vars.scss",
-		"/Users/Q/Sites/placewise/CoreWebSites/CoreProperty/mall-gatewayga/css/vars/_setting-vars.scss",
-		"/Users/Q/Sites/placewise/CoreWebSites/Craig/mall-Cabazon/css/vars/_setting-vars.scss",
-		"/Users/Q/Sites/placewise/CoreWebSites/Craig/mall-castleRock/css/vars/_setting-vars.scss",
-		"/Users/Q/Sites/placewise/CoreWebSites/Craig/mall-citadelOutlets/css/vars/_setting-vars.scss",
-		"/Users/Q/Sites/placewise/CoreWebSites/Craig/mall-conroe/css/vars/_setting-vars.scss",
-		"/Users/Q/Sites/placewise/CoreWebSites/Craig/mall-hillsboro/css/vars/_setting-vars.scss",
-		"/Users/Q/Sites/placewise/CoreWebSites/Craig/mall-outletsAtLoveland/css/vars/_setting-vars.scss"
+		"/Users/Q/Sites/placewise/CoreWebSites/ColonieMgmt/mall-yorktown/css/vars/_setting-vars.scss"
 	],
 	"find":
 	{
-		"height": 32.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -277,6 +270,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"/image",
+			"img/",
+			"img",
+			"></",
+			"addres",
+			"></",
 			"class=\"directory-text\"",
 			"directory-text",
 			"h4",
@@ -398,13 +397,7 @@
 			"$site-gutter-width",
 			"davegandy",
 			"$padding",
-			"bp(bp-small)",
-			"$icon",
-			"icon",
-			"requestanimation",
-			"sans+pro",
-			"fontawe",
-			"4000"
+			"bp(bp-small)"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -432,14 +425,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"sheets":
-			[
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 32.0
@@ -484,7 +469,6 @@
 		"height": 122.0
 	},
 	"pinned_build_system": "",
-	"project": "pwm.sublime-project",
 	"replace":
 	{
 		"height": 60.0
@@ -525,7 +509,6 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},

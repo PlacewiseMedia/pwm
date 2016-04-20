@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+footer[role=contentinfo] {
+  @include container;
+  padding-top: $base-spacing / 2;
+  padding-bottom: $base-spacing / 2;
+  background-color: $color-brand-primary-complimentary;
+  color: $color-white;
+  text-align: center;
+
+  .social {
+    display: block;
+
+    ul {
+      @include horizontal-list(spaced);
+      margin-bottom: 0;
+    }
+  }
+
+  .twitter {
+    @include icon-before($fa-var-twitter, 0, 24px, $color: $twitter);
+  }
+
+  .github {
+    @include icon-before($fa-var-github, 0, 24px, $color: $github);
+  }
+
+  .codepen {
+    @include icon-before($fa-var-codepen, 0, 24px, $color: $codepen);
+  }
+
+  .dribbble {
+    @include icon-before($fa-var-dribbble, 0, 24px, $color: $dribbble);
+  }
+
+  .linkedin {
+    @include icon-before($fa-var-linkedin, 0, 24px, $color: $linkedin);
+  }
+
+  .sitemap {
+    @include icon-before($fa-var-sitemap, 0, 24px, $color: $base-link-color);
+  }
+}

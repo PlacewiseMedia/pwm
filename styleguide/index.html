@@ -1,0 +1,34 @@
+---
+layout: default
+title: Style Guide
+description: "A virtual brand guideline of all the high-level desicions made when designing and developing components for my site."
+class: styleguide
+parent: Style Guide
+---
+
+<h1 id="{{ page.class }}">{{ page.title }}</h1>
+
+<section>
+
+  <article role="article">
+    <!-- Loop through and include all styleguide sections -->
+    {% include styleguide/about/index.html %}
+    {% include styleguide/colors/index.html %}
+    {% include styleguide/typography/index.html %}
+    {% include styleguide/buttons/index.html %}
+    {% include styleguide/grid/index.html %}
+    {% include styleguide/images/index.html %}
+    {% include styleguide/video/index.html %}
+    {% include styleguide/audio/index.html %}
+    {% include styleguide/best_practices/index.html %}
+
+    <p>Version: {{site.version }} -- Updated: {{ site.time }}</p>
+
+    <strong>FIN.</strong>
+
+  </div>
+</div>
+
+</article>
+
+</section>

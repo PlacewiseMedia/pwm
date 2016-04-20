@@ -4,22 +4,27 @@
   <!-- Footer Component -->
   <footer role="contentinfo">
 
-  <section>
+    <section>
+      <amp-img src="/images/logo-white.png" class="headshot" width="169" height="45" alt="Placewise Logo"></amp-img>
 
-    <amp-img src="/images/logo-white.png" class="headshot" width="169" height="45" alt="Placewise Logo"></amp-img>
+      <address>
+        1390 Lawrence Street #300<br>
+        Denver, CO 80204<br>
+        local <a class="tel" href="tel:+3032962413">303.296.2413</a><br>
+        toll-free <a class="tel" href="tel:+18009776255">800.977.6255</a><br>
+        email <a href="mailto:info@placewise.com">info@placewise.com</a>
+        </address>
+    </section>
 
-    <address>
-      1390 Lawrence Street #300, Denver, CO 80204<br>
-      local <a class="tel" href="tel:+3032962413">303.296.2413</a><br><br>
-      toll-free <a class="tel" href="tel:+18009776255">800.977.6255</a><br>
-      email <a href="mailto:info@placewise.com">info@placewise.com</a>
-    </address>
+    <section>
+      <p>Copyright &copy; {{ 'now' | date: "%Y" }} PlaceWise Media. All Rights Reserved.</p>
 
-</section>
-
-<section>
-  <p>Copyright &copy; {{ 'now' | date: "%Y" }} PlaceWise Media. All Rights Reserved. <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-and-conditions">Terms and Conditions</a> | <a href="/sitemap">Sitemap <i class="sitemap"></i></a></p>
-</section>
+      <ul>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
+        <li><a href="/sitemap">Sitemap <i class="sitemap"></i></a></li>
+      </ul>
+    </section>
 
   </footer>
   <!-- ./Footer Component -->
