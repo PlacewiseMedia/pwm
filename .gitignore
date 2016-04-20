@@ -1,0 +1,17 @@
+_site
+
+# Ignore node_modules
+/node_modules
+
+# Ignore sass-cache files.
+/*.sass-cache*
+
+# Ignore Jekyll Metadata
+.jekyll-metadata
+
+# Ignore sublime project files
+*.sublime-*
+
+# Ignore anything .orig
+*.orig
+

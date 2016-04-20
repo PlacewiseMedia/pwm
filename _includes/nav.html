@@ -1,0 +1,29 @@
+{% assign current = page.url | split: '/' %}
+
+<div class="menu-container">
+  <header>
+    <div class="menu-heading">
+      <label for="offcanvas-menu" class="close-btn">
+        <i class="fa fa-times fa-2x"></i>
+      </label>
+    </div>
+
+    <amp-img src="/images/logo.png" class="headshot" width="60" height="60" alt="Placewise Logo"></amp-img>
+    <p>Placewise</p>
+    <a href="mailto:info@placewise.com">info@placewise.com</a>
+  </header>
+
+  <nav role="navigation" class="slide-menu">
+    <ul>
+      {% for nav in site.data.nav %}
+      {% if nav.name == page.parent %}
+      <li class="active" role="menuitem">
+      {% else %}
+      <li role="menuitem">
+        {% endif %}
+        <a href="{{ nav.url }}"><i class="fa fa-{{ nav.icon }} fa-lg"></i> {{ nav.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

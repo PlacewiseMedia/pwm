@@ -1,0 +1,37 @@
+# Site settings
+title: Placewise Media
+email: info@placewise.com
+description: "PlaceWise Media is one of the nation’s largest shopper media networks and the leading provider of digital marketing services to hundreds of malls and lifestyle centers across North America."
+baseurl: ""
+version: 0.0.1
+url: "http://placewise.com"
+author: "Max Quattromani"
+twitter_username: placewise
+github_username:  PlacewiseMedia
+disqus: placewise
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: false
+highlighter: rouge
+
+permalink: pretty
+
+exclude: ['node_modules', 'scss', 'DAM']
+
+google_analytics: true
+google_analytics_id: UA-XXXXXXXX-2
+jquery_version: 1.11.2
+
+sitemap:
+  file: "/sitemap.xml"
+  exclude:
+      - "/atom.xml"
+      - "/feed.xml"
+      - "/feed/index.xml"
+  include_posts:
+      - "/index.html"
+  change_frequency_name: "change_frequency"
+  priority_name: "priority"
