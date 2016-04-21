@@ -2,7 +2,7 @@
 title: Placewise Media
 email: info@placewise.com
 description: "PlaceWise Media is one of the nation’s largest shopper media networks and the leading provider of digital marketing services to hundreds of malls and lifestyle centers across North America."
-baseurl: ""
+baseurl: "http://placewisemedia.github.io/pwm/"
 version: 0.0.1
 url: "http://placewise.com"
 author: "Max Quattromani"
