@@ -36,9 +36,13 @@ grunt.initConfig({
 
   imagemin: {
     dynamic: {
+      options: {
+        full:true,
+        optimizationLevel: 5
+      },
       files: [{
         expand: true,
-        cwd: 'images/orig_assets',
+        cwd: 'orig_images',
         src: ['*.{png,jpg,gif}'],
         dest: 'images'
       }]
