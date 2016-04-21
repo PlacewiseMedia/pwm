@@ -1,0 +1,8 @@
+- name: "facebook"
+  url: "https://www.facebook.com/placewise"
+
+- name: "twitter"
+  url: "https://twitter.com/placewise"
+
+- name: "linkedin"
+  url: "https://www.linkedin.com/company/placewise-media"

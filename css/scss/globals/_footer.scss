@@ -2,8 +2,8 @@
 
 footer[role=contentinfo] {
   @include container;
-  padding-top: $base-spacing / 2;
-  padding-bottom: $base-spacing / 2;
+  padding-top: ($base-spacing / 2);
+  padding-bottom: ($base-spacing / 2);
   background-color: $color-brand-primary-complimentary;
   color: $color-white;
   text-align: center;
@@ -17,20 +17,16 @@ footer[role=contentinfo] {
     }
   }
 
+  .footer-links {
+    @include horizontal-list(piped);
+  }
+
+  .facebook {
+    @include icon-before($fa-var-facebook, 0, 24px, $color: $facebook);
+  }
+
   .twitter {
     @include icon-before($fa-var-twitter, 0, 24px, $color: $twitter);
-  }
-
-  .github {
-    @include icon-before($fa-var-github, 0, 24px, $color: $github);
-  }
-
-  .codepen {
-    @include icon-before($fa-var-codepen, 0, 24px, $color: $codepen);
-  }
-
-  .dribbble {
-    @include icon-before($fa-var-dribbble, 0, 24px, $color: $dribbble);
   }
 
   .linkedin {

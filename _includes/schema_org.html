@@ -1,19 +1,56 @@
-  <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "Organization",
-      "legalName" : "Placewise Media",
-      "url" : "http://placewise.com/",
-      "contactPoint" : [{
-        "@type" : "ContactPoint",
-        "telephone" : "+1-800-977-6255",
-        "contactType" : "customer service"
-      }]
-      "logo" : "http://placewise.com/images/logo.png",
-      "sameAs" : [ "http://www.facebook.com/placewise",
-      "http://www.twitter.com/placewise",
-      "http://plus.google.com/+placewise",
-      "https://www.youtube.com/user/placewisemedia",
-      "http://www.linkedin.com/company/placewise-media"]
-    }
-  </script>
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "legalName" : "Placewise Media",
+    "url" : "http://placewise.com/",
+    "contactPoint" : [{
+      "@type" : "ContactPoint",
+      "telephone" : "+1-800-977-6255",
+      "contactType" : "customer service"
+    }]
+    "logo" : "http://placewise.com/images/logo.png",
+    "sameAs" : [
+    "http://www.facebook.com/placewise",
+    "http://www.twitter.com/placewise",
+    "http://plus.google.com/+placewise",
+    "https://www.youtube.com/user/placewisemedia",
+    "http://www.linkedin.com/company/placewise-media"
+    ]
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https://google.com/article"
+    },
+    "headline": "Article headline",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://google.com/thumbnail1.jpg",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "{{ page.date }}",
+    "dateModified": "{{ page.date_modified }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ page.author }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.title }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://google.com/logo.jpg",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "{{ page.title }}"
+  }
+</script>

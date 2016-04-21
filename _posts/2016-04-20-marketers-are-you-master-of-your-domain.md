@@ -3,7 +3,9 @@ layout: post
 title:  "MARKETERS: ARE YOU MASTER OF YOUR DOMAIN"
 permalink: "/:title"
 sub-title: ""
+author: Mort Aaronson
 date:   2016-04-20
+date_modified: 
 categories: 
     - content
 ---

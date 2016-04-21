@@ -7,7 +7,8 @@ version: 0.0.1
 url: "http://placewise.com"
 author: "Max Quattromani"
 twitter_username: placewise
-github_username:  PlacewiseMedia
+facebook_username: PlacewiseMedia
+linkedin_username: placewise-media
 disqus: placewise
 
 # Build settings
